@@ -38,12 +38,14 @@ other files are used to install or uninstall youdao.
 Step 4 : Install Server And Compile Client
 ------------
 $install.sh
+
 Maybe need root privileges.
 
 Step 5 : Execute Our Youdao
 -------------
 It is very easy to start youdao.
 $./youdao.sh
+
 Youdao.sh just was executed once.And then if you want to restart youdao , you just
 $youdao in the terminal.
 
