@@ -10,6 +10,7 @@ Download
 Step 1 : Install Qt4 library
 -----------------------------------------------------------------------
 download Qt 4.8 from http://qt-project.org/downloads
+
 install qt
 
 Setp 2 : Test your qmake
