@@ -1,5 +1,5 @@
 #-*- coding : utf-8 -*-
-
+import os
 '''
     此文件主要用于整个工程中的常量定义
 '''
@@ -21,7 +21,13 @@ UKPHONETIC = 'uk-phonetic'
 USPHONETIC = 'us-phonetic'
 
 #XMLDAO��������
-XMLFILE = '/home/update/test.xml'
+curPath = os.getcwd()
+paths = curPath.split('/')
+path = paths[0:-3]
+targetPath = '/'.join(path) + '/youdao/.dict.xml'
+
+
+XMLFILE = targetPath
 SEQUENCE = 'sequence'
 COUNT = 'count'
 NEWLINE = '\n'

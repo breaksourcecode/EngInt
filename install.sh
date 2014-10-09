@@ -74,7 +74,16 @@ if [ -z ${youdao} ] ; then
 	echo "youdao installed!"
 fi
 
-
+#setup PYTHONPATH
+python_path=`cat /home/$(whoami)/.xinitrc | grep EngInt`
+echo $cur_path
+if [ -z "${python_path}" ]; then
+	echo ""
+	echo "set PYTHONPATH..."
+	echo "export PYTHONPATH=$PYTHONPATH:$cur_path" >> /home/$(whoami)/.xinitrc
+	source /home/$(whoami)/.xinitrc
+	echo "set finished!"
+fi
 
 
 
