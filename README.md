@@ -7,7 +7,7 @@ How To Use:
 -----------------------------------------------------------------------
 Download  
 
-Step 1 : Install Qt4 library
+Step 1 : Install Qt4 Library  And Python 3.0 More
 -----------------------------------------------------------------------
 download Qt 4.8 from http://qt-project.org/downloads
 
