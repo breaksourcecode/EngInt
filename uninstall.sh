@@ -34,7 +34,7 @@ python_path=`echo $PYTHONPATH | grep EngInt`
 if [ -n python_path ]; then
 	echo ""
 	echo "delete EngInt ..."
-	sed /EngInt/d /home/$(whoami)/.xinitrc >> .xinitrc
+	sed /EngInt/d /home/$(whoami)/.bashrc >> .bashrc
 	echo "deleted!"
 fi
 

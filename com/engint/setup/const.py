@@ -26,7 +26,6 @@ paths = curPath.split('/')
 path = paths[0:-3]
 targetPath = '/'.join(path) + '/youdao/.dict.xml'
 
-
 XMLFILE = targetPath
 SEQUENCE = 'sequence'
 COUNT = 'count'

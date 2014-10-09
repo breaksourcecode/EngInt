@@ -74,13 +74,17 @@ if [ -z ${youdao} ] ; then
 fi
 
 #setup PYTHONPATH
-python_path=`cat /home/$(whoami)/.xinitrc | grep EngInt`
+python_path=`cat /home/$(whoami)/.bashrc | grep EngInt`
+echo $cur_path
+cur_path_len=${#cur_path}
+real_path_len=$[$cur_path_len - 6]
+cur_path=`echo $cur_path | cut -c1-$real_path_len`
 echo $cur_path
 if [ -z "${python_path}" ]; then
 	echo ""
 	echo "set PYTHONPATH..."
-	echo "export PYTHONPATH=$PYTHONPATH:$cur_path" >> /home/$(whoami)/.xinitrc
-	source /home/$(whoami)/.xinitrc
+	echo "export PYTHONPATH=$PYTHONPATH:$cur_path" >> /home/$(whoami)/.bashrc
+	source /home/$(whoami)/.bashrc
 	echo "set finished!"
 fi
 
