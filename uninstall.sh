@@ -1,24 +1,5 @@
 #!/usr/bin/bash
 
-CC=gcc
-CXX=g++
-QMAKE=qmake
-PACKAGE_NAME=install.sh
-NAME="youdao"
-BIN_PATH="/usr/local/bin"
-chk_user()
-{
-	echo ""
-	echo "Checkin script user ..."
-	if [ $(whoami) = "root" ]; then
-		echo "Failed."
-		echo "Root user not allowed, please run this script as a regular user."
-		echo "Exiting ..."
-		exit 1
-	fi
-	echo "Passed"
-}
-
 chk_root()
 {
 	echo ""
@@ -39,38 +20,28 @@ usage()
 	exit 1
 }
 
-
-exit_qmake=`qmake`
-if [ -z $(exit_qmake) ]; then
-	echo "qmake do not exist, please install qmake..."	
-fi
-
-cd ./youdao
-echo ""
-echo "clean youdao ..."
-make clean
-rm -f -r  $(NAME)
-echo "clean youdao finished!"
-echo ""
-echo "qmake youdao ..."
-qmake youdao.pro
-echo "qmake youdao finished!"
-echo ""
-echo "make youdao ..."
-make 
-echo "make youdao finished!"
-echo ""
-
 chk_root
 
-cur_path=$(pwd)
-exe_youdao="${cur_path}/${NAME}"
-#ln -s youdao
-youdao=`ls -l ${BIN_PATH} | grep youdao`
-if [ -z ${youdao} ] ; then
-	cd "${BIN_PATH}"
-	sudo  ln -s $exe_youdao "${BIN_PATH}/youdao" 
+exist_youdao=`ls /usr/local/bin | grep youdao`
+if [ -n ${exist_youdao} ];then
+	echo ""
+	echo "remove softlink of youdao..."
+	sudo rm -r -f /usr/local/bin/youdao
+	echo "removed!"
 fi
+
+python_path=`echo $PYTHONPATH | grep EngInt`
+if [ -n python_path ]; then
+	echo ""
+	echo "delete EngInt ..."
+	sed /EngInt/d /home/$(whoami)/.xinitrc >> .xinitrc
+	echo "deleted!"
+fi
+
+
+
+
+
 
 
 

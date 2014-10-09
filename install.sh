@@ -1,11 +1,10 @@
 #!/usr/bin/bash
 
-CC=gcc
-CXX=g++
 QMAKE=qmake
 PACKAGE_NAME=install.sh
 NAME="youdao"
 BIN_PATH="/usr/local/bin"
+
 chk_user()
 {
 	echo ""
@@ -84,7 +83,6 @@ if [ -z "${python_path}" ]; then
 	source /home/$(whoami)/.xinitrc
 	echo "set finished!"
 fi
-
 
 
 
