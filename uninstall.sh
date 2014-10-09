@@ -70,8 +70,6 @@ youdao=`ls -l ${BIN_PATH} | grep youdao`
 if [ -z ${youdao} ] ; then
 	cd "${BIN_PATH}"
 	sudo  ln -s $exe_youdao "${BIN_PATH}/youdao" 
-	echo ""
-	echo "youdao installed!"
 fi
 
 

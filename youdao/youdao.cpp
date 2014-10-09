@@ -12,7 +12,8 @@ Ui_MainWindow::Ui_MainWindow():pos(0),level(0)
 	timer->setInterval(1000);
 	timer->start();
 	
-	px = new ParseXML("../.dict.xml");
+	QString curPath = QCoreApplication::applicationDirPath();
+	px = new ParseXML(curPath+"/.dict.xml");
 	setVec();
 	setNumWords();
 }
