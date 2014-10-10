@@ -2,7 +2,7 @@ EngInt
 ======
 A English interpret software. The words can be synchronized to the network.
 
-![image](https://github.com/breaksourcecode/EngInt/tree/master/screenshots/2014-10-10-185454_588x339_scrot.png)
+![image](https://github.com/breaksourcecode/EngInt/blob/master/screenshots/2014-10-10-185454_588x339_scrot.png)
 How To Use:
 -----------------------------------------------------------------------
 Download  EngInt
