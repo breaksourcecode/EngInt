@@ -3,13 +3,13 @@ import os
 '''
     此文件主要用于整个工程中的常量定义
 '''
-#�����е�����API��ַ
+#使用youdao提供的在线翻译API
 from com.engint.tools import html
 keyfrom = r'halfinterpreter'
 key = r'1317759079'
 URL = r'http://fanyi.youdao.com/openapi.do?keyfrom='+keyfrom+'&key='+key+'&type=data&doctype=json&version=1.1&q='
 
-#Youdao��������
+#Youdao返回的数据键值
 QUERY = 'query'
 ERRORCODE = 'errorCode'
 WEB = 'web'
@@ -20,7 +20,7 @@ PHONETIC = 'phonetic'
 UKPHONETIC = 'uk-phonetic'
 USPHONETIC = 'us-phonetic'
 
-#XMLDAO��������
+#XMLDAO用于保存查询的数据
 curPath = os.getcwd()
 paths = curPath.split('/')
 path = paths[0:-3]
@@ -38,13 +38,13 @@ SEMANTIC =  'semantic'
 FIRSTTIME = 'firsttime'
 LASTTIME = 'lasttime'
 
-#�ͻ�������
+#服务器端配置
 IP = 'localhost'
 PORT = 8001
 ADDRESS = tuple((IP,PORT))
 BUFFERSIZE = 1024
 
-#����������ʽ
+#对输入数据进行过滤
 PATTERN = r'^[a-zA-Z]+$'
 
 #请输入单词
