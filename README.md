@@ -17,7 +17,8 @@ Step 2 : Test your qmake
 -----------------------------------------------------------------------
 $qmake
 
-If the following information is displayed,  the qmake is installed.
+If the following information is displayed,  the qmake is installed. Otherwise,
+you can install qmake using pacman or apt-get.
 
 Usage: qmake [mode] [options] [files]
 QMake has two modes, one mode for generating project files based on
@@ -26,7 +27,7 @@ shouldn't need to specify a mode, as makefile generation is the default
 mode for qmake, but you may use this to test qmake on an existing project
 ... ...
 
-Step 3 : Copy EngInt to any directory and enter the main dir
+Step 3 : Copy EngInt To Any Directory And Enter The Main Directory
 -----------------------------------------------------------------------
 You will see the following dirs and files
 
