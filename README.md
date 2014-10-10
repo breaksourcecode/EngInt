@@ -27,7 +27,7 @@ mode for qmake, but you may use this to test qmake on an existing project
 ... ...
 
 Step 3 : Copy EngInt to any directory and enter the main dir
-------------
+-----------------------------------------------------------------------
 You will see the following dirs and files
 
 com  install.sh  README.md  uninstall.sh  youdao  youdao.sh
@@ -36,20 +36,20 @@ Among them, com is a part of server, and youdao represents the client. The
 other files are used to install or uninstall youdao.
 
 Step 4 : Install Server And Compile Client
-------------
+-----------------------------------------------------------------------
 $install.sh
 
-Maybe need root privileges.
+Maybe needs root privilege.
 
 Step 5 : Execute Our Youdao
--------------
+-----------------------------------------------------------------------
 It is very easy to start youdao.
 $./youdao.sh
 
-Youdao.sh just was executed once.And then if you want to restart youdao , you just
+youdao.sh just was executed once.And then if you want to restart youdao , you just
 $youdao in the terminal.
 
-Now enjoy it.
+Now enjoy yourself!
 
 
 
