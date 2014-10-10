@@ -5,7 +5,7 @@ A English interpret software. The words can be synchronized to the network.
 
 How To Use:
 -----------------------------------------------------------------------
-Download  
+Download  EngInt
 
 Step 1 : Install Qt4 Library  And Python 3.0 More
 -----------------------------------------------------------------------
