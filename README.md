@@ -42,7 +42,7 @@ $install.sh
 
 Maybe needs root privilege.
 
-Step 5 : Execute Our Youdao
+Step 5 : Execute Youdao
 -----------------------------------------------------------------------
 It is very easy to start youdao.
 
