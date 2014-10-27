@@ -40,7 +40,6 @@ void ParseXML::test()
 {
 	QDomElement root = getRootElement();
 	qDebug()<<"  ----->"<<root.tagName();
-	qDebug()<<"++++++++++++++++";
 	
 	setList();
 	qDebug()<<"meta-->"<<meta.size();
