@@ -9,7 +9,7 @@ import socket
 
 class Server(object):
     '''
-    该类作为一个服务类存在，为客户端提供服务。所以的处理都在这个类中体现。客户端仅仅作为展示层。
+    该类作为一个服务类存在，为客户端提供服务。所有的处理都在这个类中体现。客户端仅仅作为展示层。
     '''
     def __init__(self):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
